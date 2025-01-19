@@ -1,18 +1,18 @@
 # XAIguiFormer
 
-## ⚙️ Environment Set Up
+## Environment Set Up
 
 ## Preprocessing
 
-## 🕹️ Citation
+## Citation
 If you find our paper/code useful, please consider citing our work:
 ```
 @inproceedings{
-jiang2024large,
-title={Large Brain Model for Learning Generic Representations with Tremendous {EEG} Data in {BCI}},
-author={Wei-Bang Jiang and Li-Ming Zhao and Bao-Liang Lu},
-booktitle={The Twelfth International Conference on Learning Representations},
-year={2024},
-url={https://openreview.net/forum?id=QzTpTRVtrP}
+guo2025XAIguiFormer,
+title={XAIguiFormer: explainable artificial intelligence guided transformer for brain disorder identification},
+author={Hanning Guo, Farah Abdellatif, Yu Fu, N. Jon Shah, Abigail Morrison, Jürgen Dammers},
+booktitle={The Thirteenth International Conference on Learning Representations},
+year={2025},
+url={https://openreview.net/pdf/5b73d88d2e06b8ad6f2b9b27d3d848d8a955068d.pdf}
 }
 ```

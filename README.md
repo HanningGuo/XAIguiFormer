@@ -7,10 +7,28 @@ EEG-based connectomes offer a low-cost and portable method to identify brain dis
 ![XAIguiFormer](XAIguiFormer.png)
 
 ## Environment Set Up
+A suitable conda environment named XAIguiFormer can be created and activated with:
 ```
 conda env create -f environment.yaml
 conda activate XAIguiFormer
 ```
+<details>
+<summary> or install necessary packages step by step</summary>
+```
+conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia --yes
+conda install pyg -c pyg --yes
+conda install tensorboard --yes
+conda install -c conda-forge einops --yes
+conda install pandas --yes
+conda install matplotlib --yes
+conda install -c conda-forge yacs --yes
+conda install pytorch-scatter -c pyg --yes
+conda install -c conda-forge -c pytorch -c defaults timm --yes
+conda install -c conda-forge torchmetrics --yes
+conda install captum -c pytorch
+conda install bytecode
+```
+</details>
 
 ## Preparation
 

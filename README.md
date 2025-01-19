@@ -57,16 +57,16 @@ After completing the EEG data preprocessing and connectome construction, you nee
 ├── TUAB
 |   ├── raw             # preprocessed EEG data
 |   |   ├── train       # train dataset
-|   |   |     ├── Subject_001
-|   |   |     |       ├── Subject_001_coherence.npy
-|   |   |     |       ├── Subject_001_wpli.npy
-|   |   |     |       ├── Subject_001_demographics.npy
-|   |   |     |       └── Subject_001_label.npy
-|   |   |     ├── Subject_002
-|   |   |     |       ├── Subject_002_coherence.npy
-|   |   |     |       ├── Subject_002_wpli.npy
-|   |   |     |       ├── Subject_002_demographics.npy
-|   |   |     |       └── Subject_002_label.npy
+|   |   |     ├── subject_001
+|   |   |     |       ├── subject_001_coherence.npy
+|   |   |     |       ├── subject_001_wpli.npy
+|   |   |     |       ├── subject_001_demographics.npy
+|   |   |     |       └── subject_001_label.npy
+|   |   |     ├── subject_002
+|   |   |     |       ├── subject_002_coherence.npy
+|   |   |     |       ├── subject_002_wpli.npy
+|   |   |     |       ├── subject_002_demographics.npy
+|   |   |     |       └── subject_002_label.npy
 |   |   |     └── ...
 |   |   ├── val         # val dataset
 |   |   |     └── ...

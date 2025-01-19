@@ -7,6 +7,8 @@ EEG-based connectomes offer a low-cost and portable method to identify brain dis
 ![XAIguiFormer](XAIguiFormer.png)
 
 ## Environment Set Up
+```conda env create -f environment.yaml```
+```conda activate XAIguiFormer```
 
 ## Preparation
 

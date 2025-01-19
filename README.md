@@ -14,23 +14,28 @@ conda activate XAIguiFormer
 ```
 or install necessary packages step by step:
 ```
-conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia --yes
-conda install pyg -c pyg --yes
-conda install tensorboard --yes
-conda install -c conda-forge einops --yes
-conda install pandas --yes
-conda install matplotlib --yes
-conda install -c conda-forge yacs --yes
-conda install pytorch-scatter -c pyg --yes
-conda install -c conda-forge -c pytorch -c defaults timm --yes
-conda install -c conda-forge torchmetrics --yes
+conda create --name XAIguiFormer python=3.10
+conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
+conda install pyg -c pyg
+conda install tensorboard
+conda install -c conda-forge einops
+conda install pandas
+conda install matplotlib
+conda install -c conda-forge yacs
+conda install pytorch-scatter -c pyg
+conda install -c conda-forge -c pytorch -c defaults timm
+conda install -c conda-forge torchmetrics
 conda install captum -c pytorch
 conda install bytecode
 ```
 
 ## Preparation
 
-## Run
+## Run Experiments
+One can change the default hyperparameters in the configs/*.yaml rather than using command line args.
+```
+python main.py --dataset TDBRAIN/TUAB
+```
 
 ## Citation
 If you find our paper/code useful, please consider citing our work:

@@ -31,7 +31,10 @@ conda install bytecode
 
 ## Data Preparation
 ### Preprocessing
-
+One could preprocess the raw EEG data by utils/preprocessing. Before runing this code, please note to modify the EEG data path accordingly in the configs/*_preprocess.yaml and load the corresponding yaml in the preprocessing.py:
+```
+python utils/preprocessing.py
+```
 
 ## Run Experiments
 One can change the default hyperparameters in the configs/*.yaml rather than using command line args.

@@ -1,0 +1,46 @@
+######################################
+# basic settings
+######################################
+dataset: TDBRAIN
+root: /path/to/dataset_root # the root path of dataset
+out_root: /path/to/output #<output-root-to-save-results>
+num_workers: 8
+seed: 3407
+
+######################################
+# model settings
+######################################
+model:
+  num_node_feat: 26
+  num_edge_feat: 1
+  num_classes: 3
+  num_head: 4
+  dim_node_feat: 128
+  dim_edge_feat: 128
+  gnn_type: GINEConv
+  num_gnn_layer: 4
+  num_transformer_layer: 12
+  explainer_type: GradCam
+  mlp_ratio: 4.
+  init_values: 0.001
+
+######################################
+# train settings
+######################################
+train:
+  batch_size: 64
+  epochs: 100
+  criterion:
+    alpha: 0.7
+  optimizer:
+    lr: 5e-5
+    weight_decay: 1e-5
+  lr_scheduler:
+    warmup_epochs: 5
+    warmup_lr: 1e-7
+
+######################################
+# augmentation settings
+######################################
+aug:
+  mixup_prob: 1.

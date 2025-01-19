@@ -1,0 +1,41 @@
+######################################
+# basic settings
+######################################
+dataset: TUAB
+
+######################################
+# preprocessing settings
+######################################
+preprocessing:
+  n_workers: 4
+  n_jobs: null # or ~
+  l_freq: 1 # high pass frequency
+  h_freq: 45  # low pass frequency
+  line_frequency: 60  # 60 in U.S. or 50 in Europe
+  path:
+    data_dir: <path-to-raw-dataset> # dataset path
+    save_dir: <save-path-to-preprocesses-data> # save path for preprocessed results
+  ica:  # ica parameters
+    n_components: 15  # or 10 for certain subject
+    method: 'infomax'
+    fit_params: {extended: true}
+    ic_label_threshold: 0.0
+
+######################################################
+# frequency band range and methods of constructing FC
+######################################################
+connectome:
+  frequency_band:
+    delta: [2., 4.]
+    theta: [4., 8.]
+    low_alpha: [8., 10.]
+    high_alpha: [10., 12.]
+    low_beta: [12., 18.]
+    mid_beta: [18., 21.]
+    high_beta: [21., 30.]
+    gamma: [30., 45.]
+    beta: [12., 30. ]  # being used for theta/beta ratio FC
+  methods: ['coh', 'wpli']
+  path:
+    data_dir: <preprocessed-path-to-preprocessed-data> # preprocessed dataset path
+    save_dir: <save-path-to-connectome> # connectome save path

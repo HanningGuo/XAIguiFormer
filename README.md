@@ -51,7 +51,7 @@ To construct the connectome from preprocessed EEG data, you must configure the d
 python utils/constructFC.py
 ```
 
-After completing the EEG data preprocessing and connectome construction, you need to prepare the demographics data and organize all required files into the final directory structure carefully. You may refer to utils/transform_dataformAndlabel.py.
+After completing the EEG data preprocessing and connectome construction, you need to prepare the demographics data and organize all required files into the final directory structure as below. You may refer to utils/transform_dataformAndlabel.py.
 ```EEGBenchmarkDataset
 ├── ...
 ├── TUAB

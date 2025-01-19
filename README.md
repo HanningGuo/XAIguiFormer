@@ -78,10 +78,11 @@ EEGBenchmarkDataset
 ```
 
 ## Run Experiments
-If you want to change the default hyperparameters, you can update the configuration located in the configs/*_model.yaml.
 ```
 python main.py --dataset TDBRAIN/TUAB
 ```
+If you want to change the default hyperparameters, you can update the configuration located in the configs/*_model.yaml.
+
 
 ## Citation
 If you find our paper/code useful, please consider citing our work:

@@ -12,8 +12,7 @@ A suitable conda environment named XAIguiFormer can be created and activated wit
 conda env create -f environment.yaml
 conda activate XAIguiFormer
 ```
-<details>
-<summary> or install necessary packages step by step</summary>
+or install necessary packages step by step:
 ```
 conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia --yes
 conda install pyg -c pyg --yes
@@ -28,7 +27,6 @@ conda install -c conda-forge torchmetrics --yes
 conda install captum -c pytorch
 conda install bytecode
 ```
-</details>
 
 ## Preparation
 

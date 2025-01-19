@@ -15,6 +15,7 @@ conda activate XAIguiFormer
 or install necessary packages step by step:
 ```
 conda create --name XAIguiFormer python=3.10
+conda activate XAIguiFormer
 conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
 conda install pyg -c pyg
 conda install tensorboard
@@ -30,8 +31,16 @@ conda install bytecode
 ```
 
 ## Data Preparation
+In order to run the preprocessing and construct the connectome, mne, mne_icalabel, mne_connectivity must be installed: 
+```
+conda create -c conda-forge --strict-channel-priority --name=mne mne
+conda activate mne
+conda install -c conda-forge mne-connectivity
+conda install -c conda-forge mne-icalabel
+```
+
 ### Preprocessing
-One could preprocess the raw EEG data by utils/preprocessing. Before runing this code, please note to modify the EEG data path accordingly in the configs/*_preprocess.yaml and load the corresponding yaml in the preprocessing.py:
+One could preprocess the raw EEG data by utils/preprocessing. Before running this code, please note to modify the path of EEG data accordingly in the configs/*_preprocess.yaml and load the corresponding yaml in the preprocessing.py:
 ```
 python utils/preprocessing.py
 ```

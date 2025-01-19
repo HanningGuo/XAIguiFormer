@@ -1,5 +1,5 @@
 # XAIguiFormer
-This is a pytorch implementation of our ICLR 2025 paper "[XAIguiFormer: explainable artificial intelligence guided transformer for brain disorder identification](https://openreview.net/forum?id=AD5yx2xq8R)".
+This is a pytorch implementation of our ICLR 2025 paper [XAIguiFormer: explainable artificial intelligence guided transformer for brain disorder identification](https://openreview.net/forum?id=AD5yx2xq8R).
 ## Environment Set Up
 
 ## Preparation

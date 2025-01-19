@@ -40,7 +40,7 @@ conda install -c conda-forge mne-icalabel
 ```
 
 ### Preprocessing
-One could preprocess the raw EEG data by utils/preprocessing. Before running this code, please don't forget to modify the path of EEG data accordingly in the configs/*_preprocess.yaml and load the corresponding yaml file in the preprocessing.py:
+One could preprocess the raw EEG data by utils/preprocessing. Before running this code, please don't forget to modify the path of EEG data accordingly in the configs/*_preprocess.yaml and load the corresponding YAML file in the preprocessing.py:
 ```
 python utils/preprocessing.py
 ```

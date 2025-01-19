@@ -31,7 +31,7 @@ conda install bytecode
 ```
 
 ## Data Preparation
-In order to run the preprocessing and construct the connectome, mne, mne_icalabel, mne_connectivity must be installed: 
+In order to run the preprocessing and construct the connectome, these libraries mne, mne_icalabel, mne_connectivity must be installed: 
 ```
 conda create -c conda-forge --strict-channel-priority --name=mne mne
 conda activate mne
@@ -40,10 +40,17 @@ conda install -c conda-forge mne-icalabel
 ```
 
 ### Preprocessing
-One could preprocess the raw EEG data by utils/preprocessing. Before running this code, please note to modify the path of EEG data accordingly in the configs/*_preprocess.yaml and load the corresponding yaml in the preprocessing.py:
+One could preprocess the raw EEG data by utils/preprocessing. Before running this code, please note to modify the path of EEG data accordingly in the configs/*_preprocess.yaml and load the corresponding yaml file in the preprocessing.py:
 ```
 python utils/preprocessing.py
 ```
+
+### Construct the connectome
+Further, specify the data path in order to construct the connectome:
+```
+python utils/constructFC.py
+```
+So far, the calculation of EEG data has been done. You also need to prepare demographics data and arrange those data into final directory according to your own folder structures. You may refer to utils/transform_dataformAndlabel.py.
 
 ## Run Experiments
 One can change the default hyperparameters in the configs/*.yaml rather than using command line args.

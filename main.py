@@ -29,7 +29,6 @@ def set_seed(seed):
     torch.cuda.manual_seed(seed)
     torch.cuda.manual_seed_all(seed)
     torch.backends.cudnn.deterministic = True
-    # might improve if the benchmarking feature sets True
     torch.backends.cudnn.benchmark = False
 
 

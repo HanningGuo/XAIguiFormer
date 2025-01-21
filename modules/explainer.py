@@ -23,7 +23,7 @@ class Explainer(nn.Module):
 
     explainer_types = ['Activation', 'GradientXActivation', 'InternalInfluence', 'DeepLift', 'IntegratedGradients', 'DeepLiftShap', 'GradCam']
 
-    def __init__(self, model, layer, explainer_type='GradCam', device_ids=None, multiply_by_inputs=True):
+    def __init__(self, model, layer, explainer_type='DeepLift', device_ids=None, multiply_by_inputs=True):
         super().__init__()
         self.explainer_type = explainer_type
         assert self.explainer_type in self.explainer_types, '{} cannot be supported. Please choose the explainer type: {}'.format(self.explainer_type, self.explainer_types)

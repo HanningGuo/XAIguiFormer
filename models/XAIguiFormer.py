@@ -20,7 +20,7 @@ class XAIguiFormer(nn.Module):
             gnn_type='GINEConv',
             gnn_hidden_features=None,
             pooling='mean',
-            explainer_type='GradCam',
+            explainer_type='DeepLift',
             dim_feedforward=None,
             mlp_ratio=4.,
             act_func=nn.GELU,
@@ -51,7 +51,7 @@ class XAIguiFormer(nn.Module):
             :param pooling: str (optional), specify pooling method for GNN
             (default: mean)
             :param explainer_type: str (optional), specify which XAI algorithm is used to interpret model
-            (default: GradCam)
+            (default: DeepLift)
             :param dim_feedforward: int (optional), the dimension of feed forward layer
             (default: None)
             :param mlp_ratio: float (optional), mlp ratio is used to calculate the dimension of feed forward layer, as same effect as dim_feedforward
